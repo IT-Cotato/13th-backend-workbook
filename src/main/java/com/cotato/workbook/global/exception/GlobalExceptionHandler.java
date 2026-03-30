@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    // CustomException 처리 — UserException, PostException 등 모두 여기서 처리돼요
     @ExceptionHandler(CustomException.class)
     public ResponseEntity<CommonResponse<Void>> handleCustomException(CustomException e) {
         BaseErrorCode errorCode = e.getErrorCode();
@@ -18,7 +17,6 @@ public class GlobalExceptionHandler {
                 .body(CommonResponse.onFailure(errorCode.getCode(), errorCode.getMessage()));
     }
 
-    // 그 외 예상치 못한 예외 처리
     @ExceptionHandler(Exception.class)
     public ResponseEntity<CommonResponse<Void>> handleException(Exception e) {
         return ResponseEntity

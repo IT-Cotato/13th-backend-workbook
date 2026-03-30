@@ -11,9 +11,7 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 @Tag(name = "User API", description = "유저 관련 API") // Swagger에서 이 컨트롤러를 "User API" 그룹으로 묶어줘요
 @RestController          // REST API 컨트롤러임을 선언해요
 @RequestMapping("/users") // 이 컨트롤러의 모든 API는 /users로 시작해요
@@ -34,7 +32,7 @@ public class UserController {
             throw new UserException(UserErrorCode.USER_NOT_FOUND);
         }
         return CommonResponse.onSuccess(UserSuccessCode.USER_FOUND,
-                new UserResponse(id, "임준서", "junseo@example.com"));
+                new UserResponse(id, "신현주", "hyeonjoo@example.com"));
     }
 
     @Operation(summary = "유저 생성", description = "새로운 유저를 생성해요.")

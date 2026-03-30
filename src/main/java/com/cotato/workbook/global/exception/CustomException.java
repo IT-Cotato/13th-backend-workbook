@@ -4,12 +4,12 @@ import com.cotato.workbook.global.exception.code.BaseErrorCode;
 import lombok.Getter;
 
 @Getter
-public class CustomException extends RuntimeException {
+public class CustomException extends RuntimeException{
 
     private final BaseErrorCode errorCode;
 
     public CustomException(BaseErrorCode errorCode) {
         super(errorCode.getMessage());
-        this.errorCode = errorCode;
+        this.errorCode=errorCode;
     }
 }
