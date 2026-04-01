@@ -1,0 +1,3 @@
+swagger:
+  title:  ${SWAGGER_TITLE}
+  description: ${SWAGGER_DESCRIPTION}

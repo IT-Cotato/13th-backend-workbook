@@ -1,3 +1,5 @@
 spring:
   application:
     name: workbook
+  profiles:
+    active: local
