@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: workbook
+  profiles:
+    active : local  # 기본값. EC2에서 실행할 땐 prod로 덮어써요
