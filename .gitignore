@@ -38,3 +38,10 @@ out/
 
 # .env
 .env
+
+# 민감한 설정파일
+src/main/resources/application-local.yml
+src/main/resources/application-prod.yml
+
+# EC2 키 페어
+*.pem
