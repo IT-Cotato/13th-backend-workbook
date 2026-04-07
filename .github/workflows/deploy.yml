@@ -4,7 +4,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - feat/101-cicd
+      - develop
 
 jobs:
   build-and-deploy:
