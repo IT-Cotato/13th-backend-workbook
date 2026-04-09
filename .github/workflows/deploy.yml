@@ -67,5 +67,4 @@ jobs:
             docker compose -f ~/docker-compose.yml down
             docker compose -f ~/docker-compose.yml up -d
 
-            # 사용하지 않는 이전 이미지를 삭제해서 디스크를 정리해요
             docker image prune -f
