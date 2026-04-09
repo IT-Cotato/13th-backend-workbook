@@ -1,7 +1,7 @@
 services:
   app:
     # Docker Hub에서 pull 받을 이미지 이름이에요. 본인 아이디로 바꿔주세요
-    image: SY0518/workbook:latest
+    image: sy0518/workbook:latest
 
     # 호스트의 8080 포트를 컨테이너의 8080 포트로 연결해요
     # 형식: "호스트포트:컨테이너포트"
